@@ -1,7 +1,7 @@
-package com.example.services;
+package services;
 
-import com.example.dao.UserDAO;
-import com.example.entities.User;
+import dao.UserDAO;
+import entities.User;
 
 public class UserService {
     private final UserDAO userDAO = new UserDAO();

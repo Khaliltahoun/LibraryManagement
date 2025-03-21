@@ -1,9 +1,9 @@
-package com.example.services;
+package services;
 
-import com.example.dao.DocumentDAO;
-import com.example.entities.Book;
-import com.example.entities.Document;
-import com.example.entities.Magazine;
+import dao.DocumentDAO;
+import entities.Book;
+import entities.Document;
+import entities.Magazine;
 import java.util.List;
 
 public class DocumentService {

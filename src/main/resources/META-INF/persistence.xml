@@ -5,17 +5,17 @@
              version="3.0">
     <persistence-unit name="LibraryPU" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>com.example.entities.Document</class>
-        <class>com.example.entities.Book</class>
-        <class>com.example.entities.Magazine</class>
-        <class>com.example.entities.User</class>
-        <class>com.example.entities.Borrow</class>
+        <class>entities.Document</class>
+        <class>entities.Book</class>
+        <class>entities.Magazine</class>
+        <class>entities.User</class>
+        <class>entities.Borrow</class>
         <properties>
             <!-- Configuration MySQL -->
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/library_db"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="Khalil@2001"/>
+            <property name="jakarta.persistence.jdbc.password" value="password"/>
 
             <!-- Mise à jour automatique du schéma -->
             <property name="jakarta.persistence.schema-generation.database.action" value="create"/>

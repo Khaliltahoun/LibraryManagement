@@ -1,9 +1,9 @@
-package com.example.dao;
+package dao;
 
-import com.example.entities.Document;
+import entities.Document;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
-import com.example.utils.JpaUtil;
+import utils.JpaUtil;
 
 import java.util.List;
 

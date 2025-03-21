@@ -10,50 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="269b38b6-0d1a-4da5-b321-ac2333f7b9a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/BorrowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/DocumentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/BorrowDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/DocumentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/entities/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/entities/Borrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/entities/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/entities/Magazine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/services/BorrowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/services/DocumentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/utils/JpaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/BorrowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/DocumentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/BorrowDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DocumentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Borrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Magazine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/BorrowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/DocumentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/JpaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/DocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/DocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/BorrowDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/BorrowDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/DocumentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DocumentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entities/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entities/Borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Borrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entities/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entities/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Magazine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/services/BorrowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/BorrowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/services/DocumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/DocumentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/utils/JpaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JpaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +95,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 11.0.3" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.3" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -181,7 +158,7 @@
       <updated>1742570229489</updated>
       <workItem from="1742570230455" duration="2099000" />
       <workItem from="1742572346294" duration="4000" />
-      <workItem from="1742572358451" duration="330000" />
+      <workItem from="1742572358451" duration="637000" />
     </task>
     <servers />
   </component>

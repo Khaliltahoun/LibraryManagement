@@ -1,11 +1,11 @@
-package com.example.dao;
+package dao;
 
-import com.example.entities.Borrow;
-import com.example.entities.Document;
-import com.example.entities.User;
+import entities.Borrow;
+import entities.Document;
+import entities.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
-import com.example.utils.JpaUtil;
+import utils.JpaUtil;
 
 import java.util.List;
 

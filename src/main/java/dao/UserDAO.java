@@ -1,8 +1,8 @@
-package com.example.dao;
+package dao;
 
-import com.example.entities.User;
+import entities.User;
 import jakarta.persistence.EntityManager;
-import com.example.utils.JpaUtil;
+import utils.JpaUtil;
 
 public class UserDAO {
     public void addUser(User user) {

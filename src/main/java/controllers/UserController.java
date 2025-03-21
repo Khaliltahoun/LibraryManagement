@@ -1,8 +1,8 @@
-package com.example.controllers;
+package controllers;
 
 import com.google.gson.Gson;
-import com.example.services.UserService;
-import com.example.entities.User;
+import services.UserService;
+import entities.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

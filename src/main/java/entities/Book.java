@@ -1,4 +1,4 @@
-package com.example.entities;
+package entities;
 
 import jakarta.persistence.Entity;
 import java.util.Date;

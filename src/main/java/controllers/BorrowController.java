@@ -1,8 +1,8 @@
-package com.example.controllers;
+package controllers;
 
 import com.google.gson.Gson;
-import com.example.services.BorrowService;
-import com.example.entities.Borrow;
+import services.BorrowService;
+import entities.Borrow;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

@@ -1,11 +1,11 @@
-package com.example.services;
+package services;
 
-import com.example.dao.BorrowDAO;
-import com.example.dao.DocumentDAO;
-import com.example.dao.UserDAO;
-import com.example.entities.Borrow;
-import com.example.entities.Document;
-import com.example.entities.User;
+import dao.BorrowDAO;
+import dao.DocumentDAO;
+import dao.UserDAO;
+import entities.Borrow;
+import entities.Document;
+import entities.User;
 
 import java.util.List;
 
