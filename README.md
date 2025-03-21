@@ -58,10 +58,6 @@ your_path/apache-tomcat-11.0.3/bin
 
 # 📡 Endpoints de l'API (CRUD)
 
-## 📡 Endpoints de l'API (CRUD)
-L'API REST renvoie des **réponses en JSON**.
-
----
 
 ### 🟢 1. Gérer les Utilisateurs
 | Méthode | Endpoint      | Description                   |
