@@ -1,154 +1,125 @@
-Library Management System
-Project Overview
-The Library Management System is a web-based application built using Jakarta EE with JPA (EclipseLink) for persistence and Gson for JSON serialization. The application allows users to:
+# 📚 Library Management System
 
-View available documents (Books and Magazines)
-Borrow and return documents
-Register new users
-Add books or magazines to the system
-The project follows a Model-View-Controller (MVC) architecture and uses Apache Tomcat as the servlet container.
+Un projet de **gestion de bibliothèque** développé en **Java EE (Jakarta EE)** avec **JPA (EclipseLink), Servlets, JSP et Gson**.  
+L'application permet de **gérer des utilisateurs, des documents (livres et magazines) et des emprunts**, avec une **sortie JSON uniquement**.
 
-Technologies Used
-Jakarta EE (Servlets, JPA)
-EclipseLink for JPA
-Gson for JSON serialization
-MySQL for the database
-Apache Tomcat for running the web application
-Maven for dependency management and building the project
+---
 
-Installation Instructions
-1. Clone the Repository
-   First, clone the repository to your local machine.
+## 🚀 Technologies Utilisées
+- **Java EE (Jakarta EE 10)**
+- **JPA (EclipseLink)**
+- **Servlets & JSP**
+- **Tomcat 11**
+- **MySQL**
+- **Gson (pour la conversion JSON)**
+- **Maven**
 
-bash
-Copy
-git clone <repository_url>
-cd LibraryManagement
-2. Install Dependencies
-   Ensure that Maven is installed on your machine. If not, download and install it from here.
+---
 
-Run the following command to download all dependencies:
+## 🛠 Installation & Configuration
 
-bash
-Copy
-mvn install
-3. Set Up the Database
-   The application uses MySQL as the database.
+### 1️⃣ Cloner le projet
+```sh
+git clone https://github.com/Khaliltahoun/LibraryManagement
+cd library-management
+```
 
-Create a database in MySQL:
-sql
-Copy
+### 2️⃣ Configurer MySQL
+
+Créer une base de données library_db :
+
+```sql
 CREATE DATABASE library_db;
-Update Database Configuration in persistence.xml (located in src/main/resources/META-INF/persistence.xml) with your MySQL credentials:
-xml
-Copy
-<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/library_db"/>
+```
+
+Modifier le fichier persistence.xml :
+
+```xml
 <property name="jakarta.persistence.jdbc.user" value="root"/>
-<property name="jakarta.persistence.jdbc.password" value=""/>
-4. Deploy the Application
-   Download and Set Up Apache Tomcat from here.
+<property name="jakarta.persistence.jdbc.password" value="your_password"/>
+```
 
-Start Tomcat:
+### 3️⃣ Compiler et Déployer
 
-Navigate to the bin folder of Tomcat and run:
-bash
-Copy
-./startup.sh
-Deploy the WAR file:
-
-Build the project by running:
-bash
-Copy
+```sh
 mvn clean package
-Copy the LibraryManagement.war file from target/ to the webapps/ folder of your Tomcat installation.
-Access the Application:
+cp target/LibraryManagement-1.0-SNAPSHOT.war your_path/apache-tomcat-11.0.3/webapps/
+```
 
-Open a browser and go to: http://localhost:8080/LibraryManagement
-API Endpoints
-The application exposes the following RESTful APIs:
+### 4️⃣ Démarrer Tomcat
 
-1. List All Documents
-   URL: /documents
-   Method: GET
-   Description: Retrieves a list of all available documents (books and magazines).
-   Response:
-   json
-   Copy
-   [
-   {
-   "id": 1,
-   "title": "Java Programming",
-   "dateCreate": "2024-03-21"
-   },
-   {
-   "id": 2,
-   "title": "Machine Learning",
-   "dateCreate": "2024-03-20"
-   }
-   ]
-2. Add a Book
-   URL: /documents/book
-   Method: POST
-   Request Body:
-   json
-   Copy
-   {
-   "title": "Java EE Basics",
-   "author": "John Doe",
-   "isbn": "123456789",
-   "datePublication": "2025-03-21"
-   }
-3. Register a User
-   URL: /users
-   Method: POST
-   Request Body:
-   json
-   Copy
-   {
-   "name": "Alice",
-   "mail": "alice@example.com"
-   }
-4. Borrow a Document
-   URL: /borrows
-   Method: POST
-   Request Body:
-   json
-   Copy
-   {
-   "user": {
-   "id": 1
-   },
-   "document": {
-   "id": 1
-   }
-   }
-5. Return a Document
-   URL: /borrows/return
-   Method: PUT
-   Request Body:
-   json
-   Copy
-   {
-   "id": 1
-   }
-   Configuration
-1. Tomcat Configuration
-   Ensure Tomcat is configured to listen on port 8080 by checking server.xml under the conf/ directory:
+```sh
+your_path/apache-tomcat-11.0.3/bin
+./startup.sh
 
-xml
-Copy
-<Connector port="8080" protocol="HTTP/1.1"
-connectionTimeout="20000"
-redirectPort="8443" />
-2. MySQL Configuration
-   Ensure MySQL is running and the database is created (library_db).
-   Project Structure Overview
-   Controllers: Handle HTTP requests and map them to services (e.g., UserController, DocumentController).
-   DAO (Data Access Objects): Interact with the database using JPA to persist and retrieve entities (e.g., UserDAO, DocumentDAO).
-   Entities: Represent the database tables (e.g., User, Document, Book).
-   Services: Contain the business logic and interact with DAO classes.
-   Troubleshooting
-   404 Error: Make sure the application is correctly deployed and that the servlet mappings are correct.
-   Database Connection: Ensure MySQL is running and configured correctly in persistence.xml.
-   Port Conflicts: If another application is using port 8080, change it in server.xml to another available port.
+```
+
+---
+
+# 📡 Endpoints de l'API (CRUD)
+
+## 📡 Endpoints de l'API (CRUD)
+L'API REST renvoie des **réponses en JSON**.
+
+---
+
+### 🟢 1. Gérer les Utilisateurs
+| Méthode | Endpoint      | Description                   |
+|---------|-------------|-------------------------------|
+| **GET** | `/users`    | Récupérer la liste des utilisateurs |
+| **POST** | `/users`    | Ajouter un utilisateur |
+
+📌 **Exemple - Ajouter un utilisateur**
+
+
+<img width="1027" alt="Screenshot 2025-03-21 at 18 44 51" src="https://github.com/user-attachments/assets/5820ebc8-d1e1-4a7e-b8d4-c8a965148005" />
+
+
+📌 **Récupérer la liste des utilisateurs**
+
+<img width="1027" alt="Screenshot 2025-03-21 at 18 45 06" src="https://github.com/user-attachments/assets/b66bd56f-9125-48f7-b876-7caf0669b46a" />
+
+### 🟢 2. Gérer les Documents (Livres & Magazines)
+| Méthode | Endpoint      | Description                   |
+|---------|-------------|-------------------------------|
+| **GET** | `/documents`    | Récupérer la liste des documents |
+| **POST** | `/documents/book`    | Ajouter un livre |
+| **POST** | `/documents/magazine`    | Ajouter un magazine |
+
+📌 **Exemple - Ajouter un document**
+
+<img width="1028" alt="Screenshot 2025-03-21 at 18 45 16" src="https://github.com/user-attachments/assets/48393397-d2fc-4dc0-a5d6-37a5086caee2" />
+
+<img width="1031" alt="Screenshot 2025-03-21 at 18 45 47" src="https://github.com/user-attachments/assets/e9845c45-44b9-49ef-b72c-5050175ea0f4" />
+
+
+📌 **Récupérer la liste des documents**
+
+<img width="1039" alt="Screenshot 2025-03-21 at 18 46 17" src="https://github.com/user-attachments/assets/c8263dcf-c83e-4312-bbf5-df839531eeaa" />
+
+### 🟢 3. Gérer les Empprunts 
+| Méthode | Endpoint      | Description                   |
+|---------|-------------|-------------------------------|
+| **GET** | `/borrows`    | Récupérer les emprunts en cours |
+| **POST** | `/borrows`    | Emprunter un document |
+| **DELETE** | `/borrows/{id}`    | Supprimer un emprunt |
+
+📌 **Exemple - Ajouter un emprunt**
+
+<img width="1035" alt="Screenshot 2025-03-21 at 18 46 27" src="https://github.com/user-attachments/assets/dc07c4ea-18b3-4c89-8a1f-f4e7ac01b99e" />
+
+
+📌 **Récupérer la liste des emprunts**
+
+<img width="1037" alt="Screenshot 2025-03-21 at 18 46 36" src="https://github.com/user-attachments/assets/92bdeb01-1075-48ed-8272-1d262a0bc3bb" />
+
+
+📌 **Retourner un emprunt**
+
+<img width="1023" alt="Screenshot 2025-03-21 at 18 46 43" src="https://github.com/user-attachments/assets/7649ac40-94d7-4aea-a1b8-ec5d7d7ff965" />
+
+
+
+
+
 
